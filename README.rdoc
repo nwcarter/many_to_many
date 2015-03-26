@@ -1,28 +1,13 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Some example code of how to add and retrieve from the database:
 
-Things you may want to cover:
+nate = Student.new(name: "Nate", age: 26)
+nate.save
+cpp = Course.new(name: "C++")
+cpp.save
+nate.courses.push(cpp)
 
-* Ruby version
+nate.courses would return a collection of all the courses that have been added.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+To see how this relationship was created view the db migration files as well as the course.rb and student.rb files.
