@@ -3,7 +3,7 @@
 Some example code of how to add and retrieve from the database:
 
 
-nate = Student.new(name: "Nate", age: 26)
+<p>nate = Student.new(name: "Nate", age: 26)</p>
 
 nate.save
 
