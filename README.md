@@ -2,17 +2,11 @@
 
 Some example code of how to add and retrieve from the database:
 
-
-<p>nate = Student.new(name: "Nate", age: 26)</p>
-
+nate = Student.new(name: "Nate", age: 26)
 nate.save
-
 cpp = Course.new(name: "C++")
-
 cpp.save
-
 nate.courses.push(cpp)
-
 
 nate.courses would return a collection of all the courses that have been added.
 
