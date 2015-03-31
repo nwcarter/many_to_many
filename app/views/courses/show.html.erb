@@ -2,7 +2,8 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @course.name %>
+  <%= @course.name %></br>
+  <%= image_tag @course.image.url(:large) %>
 </p>
 
 <%= link_to 'Edit', edit_course_path(@course) %> |
